@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: ' Inter', sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #fff;
+    background-color: #000000;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    display: flex;
+    align-items: center;
+    padding-top: 10rem;
+    flex-direction: column;
+    background-image: linear-gradient(to right, #e276fe 0%, #1ebe9b 100%);
+    min-height: 100svh;
+
+    h3{
+        margin-bottom: 1rem;
+        border-bottom: 2px solid black;
+        background-color: transparent;
+        font-size: 1.9rem;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 1px black;
+    }
+}
+
+.watch{
+    background-color: #001b47;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    max-width: 60rem;
+    font-size: 2.5rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    border: 2px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .real-time--clock{
+        background-color: transparent;
+    }
+}
+
+.stop-watch{
+    background-color: #006d54;
+    padding: 2rem;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    display: flex;
+    max-width: 60rem;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 5rem;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    .time{
+        display: flex;
+        background-color: transparent;
+        margin-bottom: 2rem;
+
+        #clock{
+            background-color: transparent;
+        }
+        #milisec{
+            background-color: transparent;
+        }
+    }
+
+    .buttons{
+        background-color: transparent;
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        margin-bottom: 2rem;
+
+        button{
+            background-color: #fff;
+            border-radius: 15px;
+            font-weight: 600;
+            color: #000000;
+            padding: .8rem 1rem;
+            border: 1px solid #000000;
+            font-size: 1.6rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: all .2s linear;
+            width: 10rem;
+        }
+        button:hover{
+            background-color: #000000;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    .show-time{
+        background-color: transparent;
+        font-size: 1.8rem;
+        height: 2rem;
+    }
+}
