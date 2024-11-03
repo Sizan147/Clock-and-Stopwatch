@@ -85,9 +85,10 @@ body{
     .buttons{
         background-color: transparent;
         display: flex;
-        justify-content: space-between;
         gap: 2rem;
         margin-bottom: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
 
         button{
             background-color: #fff;
@@ -115,3 +116,39 @@ body{
         height: 2rem;
     }
 }
+
+/***** Media Section *****/ 
+
+@media (width<1200px){
+    html{
+        font-size: 58.5%;
+    }
+} 
+@media (width<800px){
+    html{
+        font-size: 55%;
+    }
+    .stop-watch{
+        max-width: 50rem;
+
+        .buttons{
+            gap: 1rem;
+        }
+    }
+}
+@media (width<700px){
+    html{
+        font-size: 52.5%;
+    }
+}
+@media (width<650px){
+    html{
+        font-size: 50%;
+    }
+    .stop-watch{
+        max-width: 40rem;
+    }
+}
+
+/***** End Media Section *****/
+
